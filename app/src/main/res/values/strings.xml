@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Spoon</string>
+    <string name="title">Baking Converter</string>
+    <string name="search_hint">Product search</string>
+    <string name="title_hint">How do we measure it?</string>
+    <string name="small_spoon">Teaspoon</string>
+    <string name="big_spoon">Tablespoon</string>
+    <string name="glass">Glass</string>
+    <string name="weight">Add weight</string>
+    <string name="equivalent">0</string>
+
+</resources>

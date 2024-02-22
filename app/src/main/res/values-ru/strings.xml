@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spoon</string>
+    <string name="title">Baking Converter</string>
+    <string name="search_hint">Найти продукт</string>
+    <string name="title_hint">Чем измеряем?</string>
+    <string name="small_spoon">Чайная ложка</string>
+    <string name="big_spoon">Столовая ложка</string>
+    <string name="glass">Стакан</string>
+    <string name="weight">Введите вес</string>
+    <string name="equivalent">0</string>
+</resources>

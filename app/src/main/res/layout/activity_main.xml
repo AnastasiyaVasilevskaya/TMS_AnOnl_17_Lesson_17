@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TitleText"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/searcher_background"
+        android:gravity="center_vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="0dp"
+        android:text="@string/search_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/title_hint"
+        style="@style/TitleText_hint"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/title_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <ImageView
+        style="@style/HelpButton"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/title_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toTopOf="@+id/title_hint" />
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="22dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_hint">
+
+        <Button
+            android:id="@+id/small_spoon"
+            style="@style/SmallSpoonButton" />
+
+        <Button
+            android:id="@+id/big_spoon"
+            style="@style/BigSpoonButton"
+            android:layout_marginHorizontal="10dp" />
+
+        <Button
+            android:id="@+id/glass"
+            style="@style/GlassButton" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/favorite"
+        style="@style/FavoriteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttons" />
+
+    <ImageView
+        style="@style/SaveButton"
+        app:layout_constraintEnd_toStartOf="@id/favorite"
+        app:layout_constraintTop_toBottomOf="@+id/buttons" />
+
+    <ImageView
+        android:id="@+id/merka"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/glass_img"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttons" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/button_background"
+        android:hint="@string/weight"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@id/merka"
+        app:layout_constraintStart_toEndOf="@id/merka"
+        app:layout_constraintTop_toTopOf="@+id/merka" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="@string/equivalent"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@id/merka"
+        app:layout_constraintEnd_toStartOf="@id/merka"
+        app:layout_constraintTop_toTopOf="@id/merka" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
